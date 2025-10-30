@@ -5,7 +5,7 @@ Each sample application has the same basic elements:
 - Data is managed via local JSON file
 
 
-# Getting Started
+## Getting Started with VS Code and Github Copilot Agent
 Clone the repository and pull from main
 `git pull origin main`
 
@@ -28,6 +28,13 @@ Make a change and see if it is automatically reflected, for example in `index.ht
 
 You're all set! Use the Copilot `Agent Mode` to get started on the changes!
 
+## Getting Started with ChatGPT or Gemini
+- Copy the `repomix.xml` file from the app you want to change/modify
+- Open https://www.chatgpt.com or https://gemini.google.com and sign in with your account
+- Add the `repomix.xml` file to the chat and enable the `Canvas`
+- Start your prompt with the following text:
+`I have this app that I want to modify. Can you load it in the Canvas and make the necessary changes? Here is what I want: ...`
+
 ### Inspiration ideas
 - Change the color scheme / theme of the app to something flashy or exotic, for example a Cyberpunk theme, Hawaii, Old Western style, Barbie inspired, Disco, ...
 - Add additional features to the app, such as new menu items, pages, dashboards, ...
@@ -35,7 +42,7 @@ You're all set! Use the Copilot `Agent Mode` to get started on the changes!
 - .. Or ask AI to come up with ideas for you!
 
 
-# Common issues
+# Common issues in VS Code
 Repository not found when trying to pull from the Main branch on the remote repository
 ```
 remote: Repository not found.
