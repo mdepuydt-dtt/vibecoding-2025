@@ -5,12 +5,11 @@ function RoomFilters({ filters, onFilterChange }) {
 
   return (
     <div className="card p-6 mb-8">
-      <h2 className="text-2xl font-bold mb-2 text-black">Solution Configurator</h2>
-      <p className="text-sm text-gray-600 mb-6 italic">Leverage our best-in-class filtering capabilities to optimize your engagement selection</p>
+      <h2 className="text-2xl font-bold mb-6 text-gray-800">Filter Rooms</h2>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
         <div>
-          <label className="block text-sm font-semibold mb-2 text-black">Service Line</label>
+          <label className="block text-sm font-semibold mb-2 text-gray-700">Room Type</label>
           <select
             value={filters.type}
             onChange={(e) => onFilterChange('type', e.target.value)}
@@ -25,7 +24,7 @@ function RoomFilters({ filters, onFilterChange }) {
         </div>
 
         <div>
-          <label className="block text-sm font-semibold mb-2 text-black">Industry Vertical</label>
+          <label className="block text-sm font-semibold mb-2 text-gray-700">View</label>
           <select
             value={filters.view}
             onChange={(e) => onFilterChange('view', e.target.value)}
@@ -40,8 +39,8 @@ function RoomFilters({ filters, onFilterChange }) {
         </div>
 
         <div>
-          <label className="block text-sm font-semibold mb-2 text-black">
-            Budget Ceiling: <span className="text-[#86BC25] font-bold">${filters.maxPrice}K</span>
+          <label className="block text-sm font-semibold mb-2 text-gray-700">
+            Max Price: <span className="text-blue-600">${filters.maxPrice}</span>
           </label>
           <input
             type="range"
@@ -50,31 +49,31 @@ function RoomFilters({ filters, onFilterChange }) {
             step="10"
             value={filters.maxPrice}
             onChange={(e) => onFilterChange('maxPrice', e.target.value)}
-            className="w-full h-2 bg-gray-200 appearance-none cursor-pointer accent-[#86BC25]"
+            className="w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer accent-blue-600"
           />
         </div>
 
         <div>
-          <label className="block text-sm font-semibold mb-2 text-black">Team Bandwidth</label>
+          <label className="block text-sm font-semibold mb-2 text-gray-700">Capacity</label>
           <select
             value={filters.capacity}
             onChange={(e) => onFilterChange('capacity', e.target.value)}
             className="select-field"
           >
-            <option value="0">Flexible</option>
-            <option value="1">1 Consultant</option>
-            <option value="2">2 Consultants</option>
-            <option value="3">3 Consultants</option>
-            <option value="4">4+ Consultants</option>
+            <option value="0">Any</option>
+            <option value="1">1 Guest</option>
+            <option value="2">2 Guests</option>
+            <option value="3">3 Guests</option>
+            <option value="4">4+ Guests</option>
           </select>
         </div>
       </div>
 
       <div className="mt-6">
-        <label className="block text-sm font-semibold mb-3 text-black">Key Deliverables & Value Streams</label>
+        <label className="block text-sm font-semibold mb-3 text-gray-700">Amenities</label>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
           {amenitiesList.map((amenity) => (
-            <label key={amenity} className="flex items-center text-sm cursor-pointer hover:text-[#86BC25] transition-colors font-medium">
+            <label key={amenity} className="flex items-center text-sm cursor-pointer hover:text-blue-600 transition-colors">
               <input
                 type="checkbox"
                 checked={filters.amenities.includes(amenity)}
@@ -84,7 +83,7 @@ function RoomFilters({ filters, onFilterChange }) {
                     : filters.amenities.filter((a) => a !== amenity)
                   onFilterChange('amenities', newAmenities)
                 }}
-                className="mr-2 w-4 h-4 accent-[#86BC25] cursor-pointer"
+                className="mr-2 w-4 h-4 accent-blue-600 cursor-pointer"
               />
               {amenity}
             </label>
@@ -104,7 +103,7 @@ function RoomFilters({ filters, onFilterChange }) {
         }
         className="btn-secondary mt-6"
       >
-        Reset Parameters
+        Reset Filters
       </button>
     </div>
   )

@@ -37,10 +37,10 @@ function Home() {
 
   return (
     <div className="min-h-screen bg-gray-50">
-      <header className="bg-black shadow-lg border-b-4 border-[#86BC25]">
+      <header className="bg-gradient-to-r from-blue-600 to-blue-800 shadow-lg">
         <div className="max-w-7xl mx-auto py-8 px-4">
-          <h1 className="text-4xl font-bold text-white">Deloitte Consulting Services</h1>
-          <p className="text-[#86BC25] mt-2 font-semibold">Delivering value through strategic excellence & actionable insights</p>
+          <h1 className="text-4xl font-bold text-white">Hotel Booking</h1>
+          <p className="text-blue-100 mt-2">Find your perfect stay</p>
         </div>
       </header>
 
@@ -48,8 +48,8 @@ function Home() {
         <RoomFilters filters={filters} onFilterChange={handleFilterChange} />
 
         <div className="mb-6">
-          <p className="text-gray-900 font-semibold text-lg">
-            <span className="text-[#86BC25]">{filteredRooms.length}</span> consulting engagement{filteredRooms.length === 1 ? '' : 's'} aligned with your business objectives
+          <p className="text-gray-700 font-medium">
+            Showing {filteredRooms.length} {filteredRooms.length === 1 ? 'room' : 'rooms'}
           </p>
         </div>
 
@@ -68,8 +68,8 @@ function Home() {
                 d="M9.172 16.172a4 4 0 015.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
               />
             </svg>
-            <p className="text-2xl font-semibold text-gray-800 mb-2">No synergistic opportunities identified</p>
-            <p className="text-gray-600 mb-6">Let's pivot and recalibrate your criteria to unlock value-add solutions</p>
+            <p className="text-2xl font-semibold text-gray-800 mb-2">No rooms found</p>
+            <p className="text-gray-600 mb-6">Try adjusting your filters to see more options</p>
             <button
               onClick={() =>
                 handleFilterChange('reset', {
@@ -82,7 +82,7 @@ function Home() {
               }
               className="btn-primary"
             >
-              Reset Parameters
+              Reset Filters
             </button>
           </div>
         ) : (

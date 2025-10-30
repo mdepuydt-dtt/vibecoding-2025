@@ -25,19 +25,19 @@ function Confirmation() {
 
   return (
     <div className="min-h-screen bg-gray-50">
-      <header className="bg-black shadow-lg border-b-4 border-[#86BC25]">
+      <header className="bg-gradient-to-r from-green-600 to-green-800 shadow-lg">
         <div className="max-w-7xl mx-auto py-8 px-4">
-          <h1 className="text-4xl font-bold text-white">Engagement Confirmed</h1>
-          <p className="text-[#86BC25] mt-2 font-semibold">Your strategic partnership is now activated</p>
+          <h1 className="text-4xl font-bold text-white">Booking Confirmed</h1>
+          <p className="text-green-100 mt-2">Your reservation is complete</p>
         </div>
       </header>
 
       <main className="max-w-3xl mx-auto py-12 px-4">
         <div className="card p-10">
           <div className="text-center mb-10">
-            <div className="w-24 h-24 bg-[#86BC25] flex items-center justify-center mx-auto mb-6">
+            <div className="w-24 h-24 bg-green-500 rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg">
               <svg
-                className="w-14 h-14 text-black"
+                className="w-14 h-14 text-white"
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24"
@@ -45,101 +45,94 @@ function Confirmation() {
                 <path
                   strokeLinecap="round"
                   strokeLinejoin="round"
-                  strokeWidth={3}
+                  strokeWidth={2.5}
                   d="M5 13l4 4L19 7"
                 />
               </svg>
             </div>
-            <h2 className="text-4xl font-bold mb-3 text-black">Engagement Activated!</h2>
-            <p className="text-gray-700 text-lg italic">We're committed to driving transformational value and unlocking synergies</p>
+            <h2 className="text-4xl font-bold mb-3 text-gray-800">Booking Successful!</h2>
+            <p className="text-gray-600 text-lg">Your reservation has been confirmed</p>
           </div>
 
-          <div className="bg-[#86BC25] p-5 mb-8">
-            <p className="text-sm text-black font-semibold">Engagement Reference Code</p>
-            <p className="text-2xl font-bold text-black">{bookingId}</p>
-            <p className="text-xs text-black mt-1 italic">Share this with your engagement manager for seamless onboarding</p>
+          <div className="bg-gradient-to-r from-blue-50 to-blue-100 border-2 border-blue-300 rounded-lg p-5 mb-8">
+            <p className="text-sm text-gray-600">Booking Reference</p>
+            <p className="text-2xl font-bold text-blue-600">{bookingId}</p>
           </div>
 
           <div className="space-y-6">
-            <div className="border-l-4 border-[#86BC25] pl-4">
-              <h3 className="text-xl font-bold mb-3 text-black">Engagement Package</h3>
+            <div>
+              <h3 className="text-xl font-semibold mb-3">Room Details</h3>
               <div className="flex gap-4">
-                <img src={room.image} alt={room.name} className="w-32 h-24 object-cover" />
+                <img src={room.image} alt={room.name} className="w-32 h-24 object-cover rounded" />
                 <div>
-                  <p className="font-bold text-black">{room.name}</p>
-                  <p className="text-sm text-gray-700">{room.type} Service Line</p>
-                  <p className="text-sm text-gray-700">{room.view} Industry Vertical</p>
+                  <p className="font-semibold">{room.name}</p>
+                  <p className="text-sm text-gray-600">{room.type}</p>
+                  <p className="text-sm text-gray-600">{room.view} View</p>
                 </div>
               </div>
             </div>
 
-            <div className="border-l-4 border-[#86BC25] pl-4">
-              <h3 className="text-xl font-bold mb-3 text-black">Executive Sponsor</h3>
+            <div>
+              <h3 className="text-xl font-semibold mb-3">Guest Information</h3>
               <div className="grid grid-cols-2 gap-4">
                 <div>
-                  <p className="text-xs text-gray-500 uppercase tracking-wide">Name</p>
-                  <p className="font-semibold text-black">
+                  <p className="text-sm text-gray-600">Name</p>
+                  <p className="font-medium">
                     {bookingData.firstName} {bookingData.lastName}
                   </p>
                 </div>
                 <div>
-                  <p className="text-xs text-gray-500 uppercase tracking-wide">Email</p>
-                  <p className="font-medium text-gray-700">{bookingData.email}</p>
+                  <p className="text-sm text-gray-600">Email</p>
+                  <p className="font-medium">{bookingData.email}</p>
                 </div>
                 <div>
-                  <p className="text-xs text-gray-500 uppercase tracking-wide">Phone</p>
-                  <p className="font-medium text-gray-700">{bookingData.phone}</p>
+                  <p className="text-sm text-gray-600">Phone</p>
+                  <p className="font-medium">{bookingData.phone}</p>
                 </div>
                 <div>
-                  <p className="text-xs text-gray-500 uppercase tracking-wide">Team Size</p>
-                  <p className="font-semibold text-black">{bookingData.guests} Consultant{bookingData.guests > 1 ? 's' : ''}</p>
+                  <p className="text-sm text-gray-600">Guests</p>
+                  <p className="font-medium">{bookingData.guests}</p>
                 </div>
               </div>
             </div>
 
-            <div className="border-l-4 border-[#86BC25] pl-4">
-              <h3 className="text-xl font-bold mb-3 text-black">Engagement Timeline</h3>
+            <div>
+              <h3 className="text-xl font-semibold mb-3">Stay Details</h3>
               <div className="grid grid-cols-2 gap-4">
                 <div>
-                  <p className="text-xs text-gray-500 uppercase tracking-wide">Kickoff</p>
-                  <p className="font-semibold text-black">{new Date(bookingData.checkIn).toLocaleDateString()}</p>
+                  <p className="text-sm text-gray-600">Check-in</p>
+                  <p className="font-medium">{new Date(bookingData.checkIn).toLocaleDateString()}</p>
                 </div>
                 <div>
-                  <p className="text-xs text-gray-500 uppercase tracking-wide">Completion</p>
-                  <p className="font-semibold text-black">{new Date(bookingData.checkOut).toLocaleDateString()}</p>
+                  <p className="text-sm text-gray-600">Check-out</p>
+                  <p className="font-medium">{new Date(bookingData.checkOut).toLocaleDateString()}</p>
                 </div>
               </div>
             </div>
 
-            <div className="border-t-2 border-[#86BC25] pt-4">
+            <div className="border-t pt-4">
               <div className="flex justify-between items-center mb-2">
-                <span className="text-gray-700">
-                  {nights} {nights === 1 ? 'month' : 'months'} × ${room.price}K
+                <span>
+                  {nights} {nights === 1 ? 'night' : 'nights'} × ${room.price}
                 </span>
-                <span className="font-bold text-black">${totalPrice}K</span>
+                <span className="font-medium">${totalPrice}</span>
               </div>
               <div className="flex justify-between items-center text-xl font-bold">
-                <span className="text-black">Total Engagement Value</span>
-                <span className="text-[#86BC25]">${totalPrice}K</span>
+                <span>Total</span>
+                <span className="text-blue-600">${totalPrice}</span>
               </div>
-              <p className="text-xs text-gray-600 mt-2 italic">*Excludes travel & expenses as per standard T&E policy</p>
             </div>
           </div>
 
-          <div className="mt-8 pt-6 border-t border-gray-300">
-            <div className="bg-gray-50 p-4 mb-6 border-l-4 border-[#86BC25]">
-              <p className="text-sm text-gray-700 mb-2">
-                <span className="font-bold text-black">Next Steps:</span> Your dedicated engagement manager will reach out within 24-48 hours to align on kickoff logistics and conduct stakeholder mapping.
-              </p>
-              <p className="text-sm text-gray-700">
-                Confirmation details have been dispatched to <strong className="text-black">{bookingData.email}</strong>
-              </p>
-            </div>
+          <div className="mt-8 pt-6 border-t">
+            <p className="text-sm text-gray-600 mb-6 text-center">
+              A confirmation email has been sent to <strong>{bookingData.email}</strong>
+            </p>
             <Link
               to="/"
               className="btn-primary block text-center py-3 text-lg"
             >
-              Return to Portfolio
+              Back to Home
             </Link>
           </div>
         </div>

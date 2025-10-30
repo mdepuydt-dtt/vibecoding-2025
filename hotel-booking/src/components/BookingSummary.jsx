@@ -15,81 +15,79 @@ function BookingSummary({ room, bookingData, onConfirm, onBack }) {
 
   return (
     <div className="max-w-2xl mx-auto">
-      <h2 className="text-2xl font-bold mb-2 text-black">Executive Summary</h2>
-      <p className="text-sm text-gray-600 mb-6 italic">Please review and validate all engagement parameters before final sign-off</p>
+      <h2 className="text-2xl font-semibold mb-6">Booking Summary</h2>
 
-      <div className="bg-white border-l-4 border-[#86BC25] p-6 mb-6">
-        <h3 className="text-xl font-bold mb-4 text-black">Engagement Package</h3>
+      <div className="bg-white border rounded p-6 mb-6">
+        <h3 className="text-xl font-semibold mb-4">Room Details</h3>
         <div className="flex gap-4 mb-4">
-          <img src={room.image} alt={room.name} className="w-32 h-24 object-cover" />
+          <img src={room.image} alt={room.name} className="w-32 h-24 object-cover rounded" />
           <div>
-            <p className="font-bold text-black">{room.name}</p>
-            <p className="text-sm text-gray-700">{room.type} Service Line</p>
-            <p className="text-sm text-gray-700">{room.view} Industry Vertical</p>
-            <p className="text-sm font-semibold text-[#86BC25] mt-2">${room.price}K/month</p>
+            <p className="font-semibold">{room.name}</p>
+            <p className="text-sm text-gray-600">{room.type}</p>
+            <p className="text-sm text-gray-600">{room.view} View</p>
+            <p className="text-sm font-medium mt-2">${room.price}/night</p>
           </div>
         </div>
       </div>
 
-      <div className="bg-white border-l-4 border-[#86BC25] p-6 mb-6">
-        <h3 className="text-xl font-bold mb-4 text-black">Primary Stakeholder</h3>
+      <div className="bg-white border rounded p-6 mb-6">
+        <h3 className="text-xl font-semibold mb-4">Guest Information</h3>
         <div className="grid grid-cols-2 gap-4">
           <div>
-            <p className="text-xs text-gray-500 uppercase tracking-wide">Decision Maker</p>
-            <p className="font-semibold text-black">
+            <p className="text-sm text-gray-600">Name</p>
+            <p className="font-medium">
               {bookingData.firstName} {bookingData.lastName}
             </p>
           </div>
           <div>
-            <p className="text-xs text-gray-500 uppercase tracking-wide">Corporate Email</p>
-            <p className="font-medium text-gray-700">{bookingData.email}</p>
+            <p className="text-sm text-gray-600">Email</p>
+            <p className="font-medium">{bookingData.email}</p>
           </div>
           <div>
-            <p className="text-xs text-gray-500 uppercase tracking-wide">Direct Line</p>
-            <p className="font-medium text-gray-700">{bookingData.phone}</p>
+            <p className="text-sm text-gray-600">Phone</p>
+            <p className="font-medium">{bookingData.phone}</p>
           </div>
           <div>
-            <p className="text-xs text-gray-500 uppercase tracking-wide">Team Size</p>
-            <p className="font-semibold text-black">{bookingData.guests} Consultant{bookingData.guests > 1 ? 's' : ''}</p>
+            <p className="text-sm text-gray-600">Number of Guests</p>
+            <p className="font-medium">{bookingData.guests}</p>
           </div>
         </div>
       </div>
 
-      <div className="bg-white border-l-4 border-[#86BC25] p-6 mb-6">
-        <h3 className="text-xl font-bold mb-4 text-black">Engagement Timeline</h3>
+      <div className="bg-white border rounded p-6 mb-6">
+        <h3 className="text-xl font-semibold mb-4">Stay Details</h3>
         <div className="grid grid-cols-2 gap-4">
           <div>
-            <p className="text-xs text-gray-500 uppercase tracking-wide">Kickoff Date</p>
-            <p className="font-semibold text-black">{new Date(bookingData.checkIn).toLocaleDateString()}</p>
+            <p className="text-sm text-gray-600">Check-in</p>
+            <p className="font-medium">{new Date(bookingData.checkIn).toLocaleDateString()}</p>
           </div>
           <div>
-            <p className="text-xs text-gray-500 uppercase tracking-wide">Target Delivery</p>
-            <p className="font-semibold text-black">{new Date(bookingData.checkOut).toLocaleDateString()}</p>
+            <p className="text-sm text-gray-600">Check-out</p>
+            <p className="font-medium">{new Date(bookingData.checkOut).toLocaleDateString()}</p>
           </div>
           <div>
-            <p className="text-xs text-gray-500 uppercase tracking-wide">Duration</p>
-            <p className="font-semibold text-black">{nights} Month{nights > 1 ? 's' : ''}</p>
+            <p className="text-sm text-gray-600">Number of Nights</p>
+            <p className="font-medium">{nights}</p>
           </div>
           <div>
-            <p className="text-xs text-gray-500 uppercase tracking-wide">Total Investment</p>
-            <p className="font-bold text-[#86BC25] text-lg">${totalPrice}K</p>
+            <p className="text-sm text-gray-600">Total Price</p>
+            <p className="font-medium text-lg">${totalPrice}</p>
           </div>
         </div>
         {bookingData.specialRequests && (
-          <div className="mt-4 pt-4 border-t border-gray-200">
-            <p className="text-xs text-gray-500 uppercase tracking-wide">Strategic Objectives</p>
-            <p className="font-medium text-gray-700 mt-1">{bookingData.specialRequests}</p>
+          <div className="mt-4">
+            <p className="text-sm text-gray-600">Special Requests</p>
+            <p className="font-medium">{bookingData.specialRequests}</p>
           </div>
         )}
       </div>
 
-      <div className="bg-[#86BC25] p-6 mb-6">
-        <h3 className="text-xl font-bold mb-2 text-black">Total Engagement Value</h3>
-        <p className="text-4xl font-bold text-black">${totalPrice}K</p>
-        <p className="text-sm text-black mt-1 font-medium">
-          {nights} {nights === 1 ? 'month' : 'months'} × ${room.price}K/month
+      <div className="bg-blue-50 border border-blue-200 rounded p-6 mb-6">
+        <h3 className="text-xl font-semibold mb-2">Total Amount</h3>
+        <p className="text-3xl font-bold text-blue-600">${totalPrice}</p>
+        <p className="text-sm text-gray-600 mt-1">
+          {nights} {nights === 1 ? 'night' : 'nights'} × ${room.price}/night
         </p>
-        <p className="text-xs text-black mt-2 italic">*Investment excludes expenses and out-of-pocket costs</p>
       </div>
 
       <div className="flex gap-4">
@@ -97,13 +95,13 @@ function BookingSummary({ room, bookingData, onConfirm, onBack }) {
           onClick={onBack}
           className="btn-secondary flex-1 py-3"
         >
-          Revise Inputs
+          Back
         </button>
         <button
           onClick={onConfirm}
           className="btn-primary flex-1 py-3"
         >
-          Confirm & Proceed
+          Confirm Booking
         </button>
       </div>
     </div>

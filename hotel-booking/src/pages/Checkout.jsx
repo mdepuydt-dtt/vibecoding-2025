@@ -15,10 +15,9 @@ function Checkout() {
     return (
       <div className="min-h-screen bg-gray-50 flex items-center justify-center">
         <div className="text-center">
-          <h1 className="text-3xl font-bold mb-4 text-black">Engagement Not Found</h1>
-          <p className="text-gray-600 mb-4">This opportunity is not in our current pipeline</p>
-          <Link to="/" className="text-[#86BC25] hover:underline font-semibold">
-            Return to Dashboard
+          <h1 className="text-3xl font-bold mb-4">Room Not Found</h1>
+          <Link to="/" className="text-blue-500 hover:underline">
+            Back to Home
           </Link>
         </div>
       </div>
@@ -29,10 +28,9 @@ function Checkout() {
     return (
       <div className="min-h-screen bg-gray-50 flex items-center justify-center">
         <div className="text-center">
-          <h1 className="text-3xl font-bold mb-4 text-black">Resources Fully Allocated</h1>
-          <p className="text-gray-600 mb-4">Our consultants are currently deployed on other high-priority engagements</p>
-          <Link to="/" className="text-[#86BC25] hover:underline font-semibold">
-            Explore Alternative Solutions
+          <h1 className="text-3xl font-bold mb-4">Room Not Available</h1>
+          <Link to="/" className="text-blue-500 hover:underline">
+            Back to Home
           </Link>
         </div>
       </div>
@@ -54,13 +52,12 @@ function Checkout() {
 
   return (
     <div className="min-h-screen bg-gray-50">
-      <header className="bg-black shadow-lg border-b-4 border-[#86BC25]">
+      <header className="bg-gradient-to-r from-blue-600 to-blue-800 shadow-lg">
         <div className="max-w-7xl mx-auto py-6 px-4">
-          <Link to={`/room/${room.id}`} className="text-[#86BC25] hover:text-white mb-2 inline-block transition-colors font-semibold">
-            ← Back to Engagement Details
+          <Link to={`/room/${room.id}`} className="text-blue-100 hover:text-white mb-2 inline-block transition-colors">
+            ← Back to Room Details
           </Link>
-          <h1 className="text-3xl font-bold text-white">Engagement Onboarding</h1>
-          <p className="text-gray-300 text-sm mt-1">Streamlining your path to transformational outcomes</p>
+          <h1 className="text-3xl font-bold text-white">Checkout</h1>
         </div>
       </header>
 
@@ -69,16 +66,16 @@ function Checkout() {
           <div className="flex items-center justify-center">
             <div className="flex items-center">
               <div
-                className={`w-12 h-12 flex items-center justify-center font-bold ${
-                  step >= 1 ? 'bg-[#86BC25] text-black' : 'bg-gray-300 text-gray-600'
+                className={`w-10 h-10 rounded-full flex items-center justify-center font-semibold ${
+                  step >= 1 ? 'bg-blue-600 text-white' : 'bg-gray-300 text-gray-600'
                 }`}
               >
                 1
               </div>
-              <div className={`w-32 h-1 ${step >= 2 ? 'bg-[#86BC25]' : 'bg-gray-300'}`}></div>
+              <div className={`w-32 h-1 ${step >= 2 ? 'bg-blue-600' : 'bg-gray-300'}`}></div>
               <div
-                className={`w-12 h-12 flex items-center justify-center font-bold ${
-                  step >= 2 ? 'bg-[#86BC25] text-black' : 'bg-gray-300 text-gray-600'
+                className={`w-10 h-10 rounded-full flex items-center justify-center font-semibold ${
+                  step >= 2 ? 'bg-blue-600 text-white' : 'bg-gray-300 text-gray-600'
                 }`}
               >
                 2
@@ -86,24 +83,24 @@ function Checkout() {
             </div>
           </div>
           <div className="flex justify-center gap-24 mt-3">
-            <span className={`text-sm font-bold ${step >= 1 ? 'text-[#86BC25]' : 'text-gray-500'}`}>
-              Requirements Gathering
+            <span className={`text-sm font-medium ${step >= 1 ? 'text-blue-600' : 'text-gray-500'}`}>
+              Details
             </span>
-            <span className={`text-sm font-bold ${step >= 2 ? 'text-[#86BC25]' : 'text-gray-500'}`}>
-              Stakeholder Sign-off
+            <span className={`text-sm font-medium ${step >= 2 ? 'text-blue-600' : 'text-gray-500'}`}>
+              Confirm
             </span>
           </div>
         </div>
 
         <div className="card p-6">
-          <div className="mb-6 pb-6 border-b-2 border-[#86BC25]">
-            <h3 className="text-xl font-bold mb-3 text-black">Selected Engagement Package</h3>
+          <div className="mb-6">
+            <h3 className="text-xl font-semibold mb-2">Selected Room</h3>
             <div className="flex gap-4">
-              <img src={room.image} alt={room.name} className="w-24 h-20 object-cover" />
+              <img src={room.image} alt={room.name} className="w-24 h-20 object-cover rounded" />
               <div>
-                <p className="font-bold text-black">{room.name}</p>
-                <p className="text-sm text-gray-600">{room.type} • {room.view} Sector</p>
-                <p className="text-sm font-semibold text-[#86BC25]">${room.price}K/month</p>
+                <p className="font-semibold">{room.name}</p>
+                <p className="text-sm text-gray-600">{room.type}</p>
+                <p className="text-sm font-medium">${room.price}/night</p>
               </div>
             </div>
           </div>

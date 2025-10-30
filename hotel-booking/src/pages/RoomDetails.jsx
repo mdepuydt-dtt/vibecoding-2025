@@ -9,10 +9,9 @@ function RoomDetails() {
     return (
       <div className="min-h-screen bg-gray-50 flex items-center justify-center">
         <div className="text-center">
-          <h1 className="text-3xl font-bold mb-4 text-black">Engagement Not Found</h1>
-          <p className="text-gray-600 mb-4">This opportunity may have reached end-of-life or been deprioritized</p>
-          <Link to="/" className="text-[#86BC25] hover:underline font-semibold">
-            Return to Dashboard
+          <h1 className="text-3xl font-bold mb-4">Room Not Found</h1>
+          <Link to="/" className="text-blue-500 hover:underline">
+            Back to Home
           </Link>
         </div>
       </div>
@@ -21,13 +20,12 @@ function RoomDetails() {
 
   return (
     <div className="min-h-screen bg-gray-50">
-      <header className="bg-black shadow-lg border-b-4 border-[#86BC25]">
+      <header className="bg-gradient-to-r from-blue-600 to-blue-800 shadow-lg">
         <div className="max-w-7xl mx-auto py-6 px-4">
-          <Link to="/" className="text-[#86BC25] hover:text-white mb-2 inline-block transition-colors font-semibold">
-            ← Back to Portfolio
+          <Link to="/" className="text-blue-100 hover:text-white mb-2 inline-block transition-colors">
+            ← Back to Rooms
           </Link>
           <h1 className="text-3xl font-bold text-white">{room.name}</h1>
-          <p className="text-gray-300 text-sm mt-1">A transformative engagement designed to drive measurable outcomes</p>
         </div>
       </header>
 
@@ -38,72 +36,63 @@ function RoomDetails() {
           <div className="p-6">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               <div>
-                <h2 className="text-2xl font-bold mb-4 text-black border-b-2 border-[#86BC25] pb-2">Engagement Overview</h2>
+                <h2 className="text-2xl font-semibold mb-4">Room Information</h2>
 
-                <div className="space-y-3 text-sm">
-                  <div className="flex">
-                    <span className="font-semibold text-black w-40">Service Line:</span>
-                    <span className="text-gray-700">{room.type}</span>
+                <div className="space-y-3">
+                  <div>
+                    <span className="font-medium">Type:</span> {room.type}
                   </div>
-                  <div className="flex">
-                    <span className="font-semibold text-black w-40">Industry Focus:</span>
-                    <span className="text-gray-700">{room.view}</span>
+                  <div>
+                    <span className="font-medium">View:</span> {room.view}
                   </div>
-                  <div className="flex">
-                    <span className="font-semibold text-black w-40">Team Composition:</span>
-                    <span className="text-gray-700">{room.capacity}{' '}
-                    senior consultant{room.capacity === 1 ? '' : 's'}</span>
+                  <div>
+                    <span className="font-medium">Capacity:</span> {room.capacity}{' '}
+                    {room.capacity === 1 ? 'guest' : 'guests'}
                   </div>
-                  <div className="flex">
-                    <span className="font-semibold text-black w-40">Investment:</span>
-                    <span className="text-2xl font-bold text-[#86BC25]">${room.price}K</span>
-                    <span className="text-gray-600 ml-1">/month</span>
+                  <div>
+                    <span className="font-medium">Price:</span>{' '}
+                    <span className="text-2xl font-bold">${room.price}</span>/night
                   </div>
-                  <div className="flex">
-                    <span className="font-semibold text-black w-40">Bandwidth:</span>
+                  <div>
+                    <span className="font-medium">Availability:</span>{' '}
                     {room.available ? (
-                      <span className="text-[#86BC25] font-semibold">Resources Available</span>
+                      <span className="text-green-600">Available</span>
                     ) : (
-                      <span className="text-red-600 font-semibold">Fully Allocated</span>
+                      <span className="text-red-600">Not Available</span>
                     )}
                   </div>
                 </div>
 
                 <div className="mt-6">
-                  <h3 className="font-bold mb-2 text-black">Value Proposition</h3>
-                  <p className="text-gray-700 italic">{room.description}</p>
+                  <h3 className="font-semibold mb-2">Description</h3>
+                  <p className="text-gray-700">{room.description}</p>
                 </div>
               </div>
 
               <div>
-                <h2 className="text-2xl font-bold mb-4 text-black border-b-2 border-[#86BC25] pb-2">Key Deliverables</h2>
+                <h2 className="text-2xl font-semibold mb-4">Amenities</h2>
                 <ul className="space-y-2">
                   {room.amenities.map((amenity) => (
-                    <li key={amenity} className="flex items-center text-sm">
-                      <span className="mr-3 text-[#86BC25] font-bold">✓</span>
-                      <span className="text-gray-800">{amenity}</span>
+                    <li key={amenity} className="flex items-center">
+                      <span className="mr-2">✓</span>
+                      {amenity}
                     </li>
                   ))}
                 </ul>
-                <div className="mt-6 p-4 bg-gray-50 border-l-4 border-[#86BC25]">
-                  <p className="text-xs text-gray-700 italic">
-                    "Leveraging our proprietary methodologies and best-in-class frameworks, we'll drive synergies across your organization while ensuring alignment with strategic imperatives."
-                  </p>
-                </div>
               </div>
             </div>
 
-            <div className="mt-8 pt-6 border-t border-gray-200">
+            <div className="mt-8 pt-6 border-t">
               {room.available ? (
                 <Link
                   to={`/checkout/${room.id}`}
                   className="btn-primary text-center block md:inline-block px-8 py-3 text-lg"
                 >
-                  Initiate Engagement
+                  Book This Room
                 </Link>
               ) : (
-                <button disabled className="bg-gray-400 text-white px-8 py-3 cursor-not-allowed font-semibold">
-                  Fully Allocated - Join Waitlist
+                <button disabled className="bg-gray-400 text-white px-8 py-3 rounded-lg cursor-not-allowed">
+                  Not Available
                 </button>
               )}
             </div>

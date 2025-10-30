@@ -68,12 +68,11 @@ function BookingForm({ room, onSubmit }) {
 
   return (
     <form onSubmit={handleSubmit} className="space-y-6">
-      <h2 className="text-2xl font-bold mb-2 text-black">Stakeholder Information</h2>
-      <p className="text-sm text-gray-600 mb-6 italic">Please provide key stakeholder details to facilitate seamless engagement kickoff</p>
+      <h2 className="text-2xl font-bold mb-6">Booking Details</h2>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
         <div>
-          <label className="block text-sm font-semibold mb-2 text-black">First Name *</label>
+          <label className="block text-sm font-semibold mb-2 text-gray-700">First Name *</label>
           <input
             type="text"
             name="firstName"
@@ -85,7 +84,7 @@ function BookingForm({ room, onSubmit }) {
         </div>
 
         <div>
-          <label className="block text-sm font-semibold mb-2 text-black">Last Name *</label>
+          <label className="block text-sm font-semibold mb-2 text-gray-700">Last Name *</label>
           <input
             type="text"
             name="lastName"
@@ -99,7 +98,7 @@ function BookingForm({ room, onSubmit }) {
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
         <div>
-          <label className="block text-sm font-semibold mb-2 text-black">Corporate Email *</label>
+          <label className="block text-sm font-semibold mb-2 text-gray-700">Email *</label>
           <input
             type="email"
             name="email"
@@ -111,7 +110,7 @@ function BookingForm({ room, onSubmit }) {
         </div>
 
         <div>
-          <label className="block text-sm font-semibold mb-2 text-black">Direct Line *</label>
+          <label className="block text-sm font-semibold mb-2 text-gray-700">Phone *</label>
           <input
             type="tel"
             name="phone"
@@ -125,7 +124,7 @@ function BookingForm({ room, onSubmit }) {
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
         <div>
-          <label className="block text-sm font-semibold mb-2 text-black">Engagement Start Date *</label>
+          <label className="block text-sm font-semibold mb-2 text-gray-700">Check-in Date *</label>
           <input
             type="date"
             name="checkIn"
@@ -138,7 +137,7 @@ function BookingForm({ room, onSubmit }) {
         </div>
 
         <div>
-          <label className="block text-sm font-semibold mb-2 text-black">Target Completion Date *</label>
+          <label className="block text-sm font-semibold mb-2 text-gray-700">Check-out Date *</label>
           <input
             type="date"
             name="checkOut"
@@ -151,7 +150,7 @@ function BookingForm({ room, onSubmit }) {
         </div>
 
         <div>
-          <label className="block text-sm font-semibold mb-2 text-black">Consultant Count *</label>
+          <label className="block text-sm font-semibold mb-2 text-gray-700">Number of Guests *</label>
           <input
             type="number"
             name="guests"
@@ -166,31 +165,31 @@ function BookingForm({ room, onSubmit }) {
       </div>
 
       <div>
-        <label className="block text-sm font-semibold mb-2 text-black">Strategic Objectives & Pain Points</label>
+        <label className="block text-sm font-semibold mb-2 text-gray-700">Special Requests</label>
         <textarea
           name="specialRequests"
           value={formData.specialRequests}
           onChange={handleChange}
           rows="3"
           className="input-field"
-          placeholder="Share your key business challenges and desired outcomes to enable value creation..."
+          placeholder="Any special requirements or requests..."
         />
       </div>
 
       {nights > 0 && (
-        <div className="bg-gray-50 p-5 border-l-4 border-[#86BC25]">
+        <div className="bg-gradient-to-r from-blue-50 to-blue-100 p-5 rounded-lg border border-blue-200">
           <p className="text-sm text-gray-700">
-            <span className="font-bold text-black">Engagement Duration:</span> {nights} months
+            <span className="font-semibold">Nights:</span> {nights}
           </p>
           <p className="text-sm text-gray-700">
-            <span className="font-bold text-black">Monthly Investment:</span> ${room.price}K
+            <span className="font-semibold">Price per night:</span> ${room.price}
           </p>
-          <p className="text-2xl font-bold mt-2 text-[#86BC25]">Total Project Value: ${totalPrice}K</p>
+          <p className="text-2xl font-bold mt-2 text-blue-700">Total: ${totalPrice}</p>
         </div>
       )}
 
       <button type="submit" className="btn-primary w-full py-3 text-lg">
-        Proceed to Sign-off
+        Continue to Confirmation
       </button>
     </form>
   )
