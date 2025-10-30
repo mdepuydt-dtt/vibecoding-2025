@@ -9,7 +9,7 @@ Each sample application has the same basic elements:
 Clone the repository and pull from main
 `git pull origin main`
 
-Create a new branch
+_(optional) Create a new branch_
 `git checkout -b vibe/yourbranch`
 
 Navigate to the app you want to modify
@@ -27,6 +27,12 @@ Open `http://localhost:5173`
 Make a change and see if it is automatically reflected, for example in `index.html` change the Title with Your Name `<title>Your Name</title>`
 
 You're all set! Use the Copilot `Agent Mode` to get started on the changes!
+
+### Inspiration ideas
+- Change the color scheme / theme of the app to something flashy or exotic, for example a Cyberpunk theme, Hawaii, Old Western style, Barbie inspired, Disco, ...
+- Add additional features to the app, such as new menu items, pages, dashboards, ...
+- Change the app into something else (e.g instead of a Hotel Booking platform, make it into a Car Rental platform)
+- .. Or ask AI to come up with ideas for you!
 
 
 # Common issues
