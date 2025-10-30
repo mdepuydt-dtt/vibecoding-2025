@@ -2,6 +2,8 @@
 
 This repository contains 4 sample web applications: a [hotel booking system](./hotel-booking/), [personal blog](./personal-blog/), [social media feed](./social-media/), and [webshop](./webshop/). Each app features a simple React frontend with data managed through local JSON files (no backend or database required).
 
+![Vibe Apps](vibe-apps.png)
+
 **Getting started options:**
 - **With VS Code + Copilot**: Clone this repo and use GitHub Copilot Agent for AI-assisted modifications
 - **Without Copilot**: Copy the `repomix-output.xml` file from any app folder into Gemini or ChatGPT for direct code assistance.
