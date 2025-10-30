@@ -1,0 +1,14 @@
+[
+  {"id": 1, "name": "Wireless Headphones", "price": 79.99, "category": "Electronics", "image": "/src/data/Wireless_Headphones_001.png", "description": "High-quality wireless headphones with noise cancellation"},
+  {"id": 2, "name": "Smart Watch", "price": 199.99, "category": "Electronics", "image": "/src/data/Smart_Watch_002.png", "description": "Fitness tracker with heart rate monitor"},
+  {"id": 3, "name": "Running Shoes", "price": 89.99, "category": "Sports", "image": "/src/data/Running_Shoes_003.png", "description": "Comfortable running shoes for all terrains"},
+  {"id": 4, "name": "Coffee Maker", "price": 49.99, "category": "Home", "image": "/src/data/Coffee_Maker_004.png", "description": "Programmable coffee maker with timer"},
+  {"id": 5, "name": "Backpack", "price": 39.99, "category": "Fashion", "image": "/src/data/Backpack_005.png", "description": "Durable backpack with laptop compartment"},
+  {"id": 6, "name": "Bluetooth Speaker", "price": 59.99, "category": "Electronics", "image": "/src/data/Bluetooth_Speaker_006.png", "description": "Portable speaker with excellent sound quality"},
+  {"id": 7, "name": "Yoga Mat", "price": 29.99, "category": "Sports", "image": "/src/data/Yoga_Mat_007.png", "description": "Non-slip yoga mat for home workouts"},
+  {"id": 8, "name": "Desk Lamp", "price": 34.99, "category": "Home", "image": "/src/data/Desk_Lamp_008.png", "description": "LED desk lamp with adjustable brightness"},
+  {"id": 9, "name": "Sunglasses", "price": 44.99, "category": "Fashion", "image": "/src/data/Sunglasses_009.png", "description": "UV protection sunglasses"},
+  {"id": 10, "name": "Water Bottle", "price": 19.99, "category": "Sports", "image": "/src/data/Water_Bottle_010.png", "description": "Insulated water bottle keeps drinks cold"},
+  {"id": 11, "name": "Phone Case", "price": 14.99, "category": "Electronics", "image": "/src/data/Phone_Case_011.png", "description": "Protective case for smartphones"},
+  {"id": 12, "name": "Cookbook", "price": 24.99, "category": "Home", "image": "/src/data/Cookbook_012.png", "description": "Healthy recipes cookbook"}
+]

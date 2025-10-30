@@ -1,0 +1,68 @@
+[
+  {
+    "id": 1,
+    "title": "Getting Started with React",
+    "author": "John Doe",
+    "date": "2024-01-15",
+    "category": "Technology",
+    "excerpt": "Learn the basics of React and how to build your first component",
+    "content": "React is a powerful JavaScript library for building user interfaces. In this post, we'll explore the fundamental concepts of React including components, props, and state. Whether you're new to web development or coming from another framework, React's component-based architecture makes it easy to build scalable applications.",
+    "image": "/src/data/Getting_Started_with_React_001.png",
+    "tags": ["react", "javascript", "tutorial"]
+  },
+  {
+    "id": 2,
+    "title": "10 Tips for Better CSS",
+    "author": "Jane Smith",
+    "date": "2024-01-20",
+    "category": "Design",
+    "excerpt": "Improve your CSS skills with these practical tips and tricks",
+    "content": "Writing clean and maintainable CSS is crucial for any web project. Here are 10 tips to help you write better CSS: use meaningful class names, organize your stylesheets, leverage CSS variables, understand specificity, use flexbox and grid for layouts, and more. These practices will help you create more maintainable and scalable stylesheets.",
+    "image": "/src/data/10_Tips_for_Better_CSS_002.png",
+    "tags": ["css", "design", "webdev"]
+  },
+  {
+    "id": 3,
+    "title": "Building REST APIs with Node.js",
+    "author": "Mike Johnson",
+    "date": "2024-01-25",
+    "category": "Backend",
+    "excerpt": "A comprehensive guide to creating RESTful APIs using Node.js and Express",
+    "content": "Node.js has become one of the most popular platforms for building server-side applications. In this tutorial, we'll walk through creating a RESTful API using Express.js. We'll cover routing, middleware, authentication, error handling, and best practices for API design. By the end, you'll have a solid foundation for building your own APIs.",
+    "image": "/src/data/Building_REST_APIs_with_Nodejs_003.png",
+    "tags": ["nodejs", "backend", "api"]
+  },
+  {
+    "id": 4,
+    "title": "The Future of Web Development",
+    "author": "Sarah Williams",
+    "date": "2024-02-01",
+    "category": "Opinion",
+    "excerpt": "Exploring emerging trends and technologies shaping the future of web development",
+    "content": "The web development landscape is constantly evolving. From WebAssembly to Progressive Web Apps, from AI-powered tools to low-code platforms, the future looks exciting. In this article, we explore the trends that are likely to shape web development in the coming years and discuss how developers can prepare for these changes.",
+    "image": "/src/data/The_Future_of_Web_Development_004.png",
+    "tags": ["trends", "opinion", "future"]
+  },
+  {
+    "id": 5,
+    "title": "Mastering Git and GitHub",
+    "author": "Tom Anderson",
+    "date": "2024-02-05",
+    "category": "Tools",
+    "excerpt": "Essential Git commands and workflows every developer should know",
+    "content": "Version control is an essential skill for modern developers. Git, combined with platforms like GitHub, makes collaboration seamless. This guide covers everything from basic commands to advanced workflows, including branching strategies, merge vs rebase, handling conflicts, and best practices for commit messages. Perfect for beginners and intermediate developers alike.",
+    "image": "/src/data/Mastering_Git_and_GitHub_005.png",
+    "tags": ["git", "github", "tools"]
+  },
+  {
+    "id": 6,
+    "title": "Introduction to TypeScript",
+    "author": "Emily Brown",
+    "date": "2024-02-10",
+    "category": "Technology",
+    "excerpt": "Why TypeScript is becoming the standard for JavaScript development",
+    "content": "TypeScript adds static typing to JavaScript, helping catch errors early and improve code quality. In this introduction, we'll explore the benefits of TypeScript, how to set up a TypeScript project, basic types, interfaces, and why more and more teams are adopting TypeScript for their JavaScript projects. Learn how TypeScript can make your code more robust and maintainable.",
+    "image": "/src/data/Introduction_to_TypeScript_006.png",
+    "tags": ["typescript", "javascript", "tutorial"]
+  }
+]
