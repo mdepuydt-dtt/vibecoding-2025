@@ -1,16 +1,52 @@
-# React + Vite
+# Hotel Booking App
+![Hotel Booking App](hotel-booking.png)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Features Overview
 
-Currently, two official plugins are available:
+This hotel booking application provides a complete room reservation experience with the following features:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+**🏠 Room Browsing & Search**
+- Browse available hotel rooms with detailed information
+- View room images, descriptions, pricing, and amenities
+- Filter rooms by type (Single, Double, Suite, Deluxe), view (City, Ocean, Garden), price range, capacity, and amenities
+- Real-time filtering with immediate results
 
-## React Compiler
+**🛏️ Room Details**
+- Detailed room information including capacity, amenities, and descriptions
+- High-quality room images
+- Pricing information and availability status
+- Direct booking functionality
 
-The React Compiler is not enabled on this template. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+**📝 Booking Process**
+- Complete checkout flow with guest information form
+- Date selection for check-in and check-out
+- Booking summary with total cost calculation
+- Order confirmation page with booking details
 
-## Expanding the ESLint configuration
+**🎨 User Experience**
+- Modern, responsive design with Tailwind CSS
+- Intuitive navigation between pages
+- Clean card-based layout for easy room comparison
+- Mobile-friendly interface
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+# Getting Started - Copilot
+- Install the dependencies
+`npm install`
+ 
+- Run the application
+`npm run dev`
+
+- Test the app in your browser
+Open `http://localhost:5173`
+
+- Make a change and see if it is automatically reflected, for example in `index.html` change the Title with Your Name `<title>Your Name</title>`
+
+You're all set! Use the Copilot `Agent Mode` to get started on the changes!
+
+# Getting Started - ChatGPT or Gemini
+- Copy the `repomix-output.xml` file from the app you want to change/modify
+- Open https://www.chatgpt.com or https://gemini.google.com and sign in with your account
+- **/!\ Important: enable the `Canvas` mode**
+- Add the `repomix-output.xml` file to the chat
+- Start your prompt with the following text:
+`I have this app that I want to modify. Can you load the full codebase in a single file in the Canvas and make the necessary changes? Here is what I want: <ADD YOUR INSTRUCTIONS HERE>`
