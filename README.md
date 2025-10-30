@@ -1,6 +1,6 @@
 # Vibe Coding Workshop - Introduction
 
-This repository contains 4 sample web applications: a hotel booking system, personal blog, social media feed, and webshop. Each app features a simple React frontend with data managed through local JSON files (no backend or database required).
+This repository contains 4 sample web applications: a [hotel booking system](./hotel-booking/), [personal blog](./personal-blog/), [social media feed](./social-media/), and [webshop](./webshop/). Each app features a simple React frontend with data managed through local JSON files (no backend or database required).
 
 **Getting started options:**
 - **With VS Code + Copilot**: Clone this repo and use GitHub Copilot Agent for AI-assisted modifications
