@@ -1,0 +1,110 @@
+[
+  {
+    "id": 1,
+    "username": "nature_lover",
+    "userAvatar": "/src/data/profile_pictures/nature_lover_1_001.png",
+    "image": "/src/data/nature_lover_1_001.png",
+    "description": "Amazing sunset from the mountains. Nature never ceases to amaze me! 🏔️",
+    "likes": 342,
+    "timestamp": "2024-02-10T18:30:00Z"
+  },
+  {
+    "id": 2,
+    "username": "foodie_adventures",
+    "userAvatar": "/src/data/profile_pictures/foodie_adventures_2_002.png",
+    "image": "/src/data/foodie_adventures_2_002.png",
+    "description": "Homemade pasta carbonara 🍝 Recipe in bio!",
+    "likes": 567,
+    "timestamp": "2024-02-10T12:15:00Z"
+  },
+  {
+    "id": 3,
+    "username": "travel_diaries",
+    "userAvatar": "/src/data/profile_pictures/travel_diaries_3_003.png",
+    "image": "/src/data/travel_diaries_3_003.png",
+    "description": "Paradise found 🏖️ Crystal clear waters and white sand beaches",
+    "likes": 891,
+    "timestamp": "2024-02-10T09:45:00Z"
+  },
+  {
+    "id": 4,
+    "username": "pet_moments",
+    "userAvatar": "/src/data/profile_pictures/pet_moments_4_004.png",
+    "image": "/src/data/pet_moments_4_004.png",
+    "description": "When your dog gives you those eyes 🐕 #goodboy",
+    "likes": 1234,
+    "timestamp": "2024-02-09T20:00:00Z"
+  },
+  {
+    "id": 5,
+    "username": "fitness_journey",
+    "userAvatar": "/src/data/profile_pictures/fitness_journey_5_005.png",
+    "image": "/src/data/fitness_journey_5_005.png",
+    "description": "Morning workout done! 💪 Consistency is key",
+    "likes": 456,
+    "timestamp": "2024-02-09T07:30:00Z"
+  },
+  {
+    "id": 6,
+    "username": "art_gallery",
+    "userAvatar": "/src/data/profile_pictures/art_gallery_6_006.png",
+    "image": "/src/data/art_gallery_6_006.png",
+    "description": "New painting finished! What do you think? 🎨",
+    "likes": 789,
+    "timestamp": "2024-02-08T16:20:00Z"
+  },
+  {
+    "id": 7,
+    "username": "tech_geek",
+    "userAvatar": "/src/data/profile_pictures/tech_geek_7_007.png",
+    "image": "/src/data/tech_geek_7_007.png",
+    "description": "Finally finished my dream setup! 💻 #battlestation",
+    "likes": 923,
+    "timestamp": "2024-02-08T13:40:00Z"
+  },
+  {
+    "id": 8,
+    "username": "book_worm",
+    "userAvatar": "/src/data/profile_pictures/book_worm_8_008.png",
+    "image": "/src/data/book_worm_8_008.png",
+    "description": "Current reading list 📚 Which one should I start first?",
+    "likes": 345,
+    "timestamp": "2024-02-08T10:15:00Z"
+  },
+  {
+    "id": 9,
+    "username": "fashion_style",
+    "userAvatar": "/src/data/profile_pictures/fashion_style_9_009.png",
+    "image": "/src/data/fashion_style_9_009.png",
+    "description": "OOTD 👗 Simple but elegant",
+    "likes": 678,
+    "timestamp": "2024-02-07T18:50:00Z"
+  },
+  {
+    "id": 10,
+    "username": "coffee_addict",
+    "userAvatar": "/src/data/profile_pictures/coffee_addict_10_010.png",
+    "image": "/src/data/coffee_addict_10_010.png",
+    "description": "Perfect latte art this morning ☕",
+    "likes": 412,
+    "timestamp": "2024-02-07T08:20:00Z"
+  },
+  {
+    "id": 11,
+    "username": "urban_photography",
+    "userAvatar": "/src/data/profile_pictures/urban_photography_11_011.png",
+    "image": "/src/data/urban_photography_11_011.png",
+    "description": "City lights at night 🌃 Shot on iPhone",
+    "likes": 1056,
+    "timestamp": "2024-02-06T21:30:00Z"
+  },
+  {
+    "id": 12,
+    "username": "garden_life",
+    "userAvatar": "/src/data/profile_pictures/garden_life_12_012.png",
+    "image": "/src/data/garden_life_12_012.png",
+    "description": "My roses are blooming! 🌹 #gardening",
+    "likes": 523,
+    "timestamp": "2024-02-06T14:10:00Z"
+  }
+]
