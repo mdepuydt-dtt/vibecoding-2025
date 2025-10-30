@@ -2,32 +2,10 @@
 ![Hotel Booking App](hotel-booking.png)
 
 ## Features Overview
-
 This hotel booking application provides a complete room reservation experience with the following features:
-
-**🏠 Room Browsing & Search**
-- Browse available hotel rooms with detailed information
-- View room images, descriptions, pricing, and amenities
-- Filter rooms by type (Single, Double, Suite, Deluxe), view (City, Ocean, Garden), price range, capacity, and amenities
-- Real-time filtering with immediate results
-
-**🛏️ Room Details**
-- Detailed room information including capacity, amenities, and descriptions
-- High-quality room images
-- Pricing information and availability status
-- Direct booking functionality
-
-**📝 Booking Process**
-- Complete checkout flow with guest information form
-- Date selection for check-in and check-out
-- Booking summary with total cost calculation
-- Order confirmation page with booking details
-
-**🎨 User Experience**
-- Modern, responsive design with Tailwind CSS
-- Intuitive navigation between pages
-- Clean card-based layout for easy room comparison
-- Mobile-friendly interface
+- **🏠 Room Browsing & Search**
+- **🛏️ Room Details**
+- **📝 Booking Process**
 
 # Getting Started - Copilot
 - Install the dependencies
