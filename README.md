@@ -8,25 +8,19 @@ This repository contains 4 sample web applications: a hotel booking system, pers
 
 
 ## Getting Started with VS Code and Github Copilot Agent
-Clone the repository and pull from main
-`git pull origin main`
+- Clone the repository and pull from main: `git pull origin main`
 
-_(optional) Create a new branch_
-`git checkout -b vibe/yourbranch`
+- _(optional) Create a new branch_: `git checkout -b vibe/yourbranch`
 
-Navigate to the app you want to modify
-`cd hotel-booking`
+- Navigate to the app you want to modify: `cd hotel-booking`
 
-Install the dependencies
-`npm install`
+- Install the dependencies: `npm install`
  
-Run the application
-`npm run dev`
+- Run the application: `npm run dev`
 
-Test the app in your browser
-Open `http://localhost:5173`
+- Test the app in your browser: Open `http://localhost:5173`
 
-Make a change and see if it is automatically reflected, for example in `index.html` change the Title with Your Name `<title>Your Name</title>`
+- Make a change and see if it is automatically reflected, for example in `index.html` change the Title with Your Name `<title>Your Name</title>`
 
 You're all set! Use the Copilot `Agent Mode` to get started on the changes!
 
