@@ -1,4 +1,4 @@
-# Introduction
+# Vibe Coding Workshop - Introduction
 Each sample application has the same basic elements:
 - Simple React Frontend
 - No Backend system or Database
