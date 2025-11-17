@@ -10,23 +10,36 @@ This repository contains 4 sample web applications: a [hotel booking system](./h
 
 
 ## Getting Started with VS Code and Github Copilot Agent
-- Clone the repository and pull from main: `git pull origin main`
+---
+**PREREQUISITES**
+- [Node.JS](https://nodejs.org/en/download)
+- Local Admin or WSL to install via NPM
+---
 
-- _(optional) Create a new branch_: `git checkout -b vibe/yourbranch`
-
+- Clone the repository and pull from main: `git clone origin https://github.com/mdepuydt-dtt/vibecoding-2025.git`
 - Navigate to the app you want to modify: `cd hotel-booking`
-
 - Install the dependencies: `npm install`
- 
 - Run the application: `npm run dev`
-
 - Test the app in your browser: Open `http://localhost:5173`
-
 - Make a change and see if it is automatically reflected, for example in `index.html` change the Title with Your Name `<title>Your Name</title>`
 
 You're all set! Use the Copilot `Agent Mode` to get started on the changes!
 
+_Tip: start with small changes such as changing the theme or adding 1 small feature. If you encounter errors or bugs, just ask Copilot to fix it for you!_
+
+### Inspiration ideas
+- Change the color scheme / theme of the app to something flashy or exotic, for example a Cyberpunk theme, Hawaii, Old Western style, Barbie inspired, Disco, ...
+- Add additional features to the app, such as new menu items, pages, dashboards, ...
+- Change the app into something else (e.g instead of a Hotel Booking platform, make it into a Car Rental platform)
+- .. Or ask AI to come up with ideas for you!
+
+
 ## Getting Started with ChatGPT or Gemini
+---
+**PREREQUISITES**
+- Whitelisted exception to ChatGPT or Gemini
+---
+
 - Copy the `repomix-output.xml` file from the app you want to change/modify
 - Open https://www.chatgpt.com or https://gemini.google.com and sign in with your account
 - **/!\ Important: enable the `Canvas` mode**
@@ -43,14 +56,3 @@ You're all set! Use the Copilot `Agent Mode` to get started on the changes!
 ### Tips
 - Try not to ask for too many changes at once, its better to iterate 
 - If you encounter errors, ask AI to fix it for you!
-
-### Common issues in VS Code
-Repository not found when trying to pull from the Main branch on the remote repository
-```
-remote: Repository not found.
-fatal: repository 'https://github.com/Deloitte-Belgium/vibecoding2025.git/' not found
-```
-Fix: Reset your Git Windows Credentials:
-1) Open `Control Panel` > `Manage Windows Credentials`
-2) In the `Generic Credentials` list, look for `Git:...` entries and remove them
-3) Once removed, try to pull from Main again. It should prompt to login with your browser.
